@@ -456,7 +456,7 @@ class TikTokApi:
 
     async def stop_playwright(self):
         """Stop the playwright browser"""
-        await self.browser.close()
+        # await self.browser.close()
         await self.playwright.stop()
 
     async def get_session_content(self, url: str, **kwargs):
